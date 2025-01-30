@@ -177,12 +177,12 @@ public class LinkedList {
 	 * @return the index of the block, or -1 if the block is not in this list
 	 */
 	public int indexOf(MemoryBlock block) {
-		Node cur = this.first;
+		Node cur1 = this.first;
 		for(int i = 0; i < this.size; i++){
-			if (cur.block.equals(block)){
+			if (cur1.block.equals(block)){
 				return i;
 			}
-			cur = cur.next;
+			cur1 = cur1.next;
 		}
 		return -1;
 	}
